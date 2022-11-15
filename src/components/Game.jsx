@@ -19,7 +19,7 @@ const Game = ({name, released, image, id}) => {
     };
     return(
         <StyledGame variants={popup} initial="hidden" animate="show" layoutId={stringPathId} onClick={loadDetailHandler}>
-            <Link to={`/game/${id}`}>
+            <Link to={`/rawgio/game/${id}`}>
                 <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
                 <p>{released}</p>
                 <motion.img layoutId={`image ${stringPathId}`} src={smallImage(image,640)} alt={name} />

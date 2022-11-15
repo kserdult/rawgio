@@ -14,8 +14,8 @@ function App() {
       <GlobalStyles />
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/game/:id" element={<Home />}></Route>
+        <Route path="/rawgio" element={<Home />}></Route>
+        <Route path="/rawgio/game/:id" element={<Home />}></Route>
       </Routes>
     </div>
   )
